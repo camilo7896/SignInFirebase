@@ -37,7 +37,7 @@
 
       <button
         type="button"
-        class="flex rounded-full border-gray-600 border-2 border-s-gray-400"
+        class="flex rounded-full border-gray-600 border-2 border-s-gray-400 cursor-pointer"
         aria-expanded="false"
         type="button"
         (click)="isOpen = !isOpen"
@@ -71,15 +71,11 @@
     </div>
     <ul class="py-1" aria-labelledby="user-menu-button">
       <li>
-        <a
-          href="#"
-          class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600"
-          >Dashboard</a
-        >
+        <button (click)="layout()">dashboard</button>
       </li>
       <li>
         <a
-          href="#"
+          href="dashboard/board"
           class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600"
           >Settings</a
         >
@@ -88,11 +84,11 @@
         <a
           href="dashboard/board"
           class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600"
-          >Earnings</a
+          >Usuario</a
         >
       </li>
     </ul>
-    <div class="flex justify-center p-2 bg-orange-500">
+    <div class="cursor-pointer flex justify-center p-2 bg-orange-500">
       <button (click)="logOut()">Salir</button>
     </div>
   </div>

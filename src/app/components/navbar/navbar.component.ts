@@ -24,4 +24,8 @@ export class NavbarComponent {
     this._authState.logOut();
     this._router.navigateByUrl('auth/login');
   }
+
+  layout() {
+    return this._router.navigateByUrl('dashboard/layout');
+  }
 }

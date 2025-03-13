@@ -32,6 +32,8 @@ export class LogoutComponent {
         Validators.email,
       ]),
       password: new FormControl<string | null>('', Validators.required),
+      name: new FormControl<string | null>('', Validators.required),
+      code: new FormControl<string | null>('', Validators.required),
     });
   }
 
