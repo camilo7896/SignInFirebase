@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
-  imports: [BtnComponent, OverlayModule, FontAwesomeModule],
+  imports: [OverlayModule, FontAwesomeModule],
   templateUrl: './navbar.component.html',
 })
 export class NavbarComponent {

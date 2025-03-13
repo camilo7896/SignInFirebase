@@ -1,10 +1,10 @@
-<nav class="bg-gray-200 py-2 border-gray-200 px-6 shadow-md border-2">
-  <div class="flex flex-wrap justify-between items-center">
-    <div class="flex items-center">
+<nav class="bg-gray-200 py-2 border-gray-200 shadow-md">
+  <div class="flex flex-row justify-between">
+    <div class="flex flex-wrap items-center">
       <a routerLink="/">
         <img
           loading="lazy"
-          class="w-20 mr-8"
+          class="w-20 mr-8 px-1"
           src="assets/svg/LOGO.svg"
           alt="logo"
         />
@@ -17,27 +17,23 @@
           <li>
             <a class="block py-3 px-4 text-gray-800">Puas</a>
           </li>
-          <li>
-            <app-btn [typeBtn]="'submit'" [color]="'sky-primary'"
-              >Create</app-btn
-            >
-          </li>
         </ul>
       </div>
     </div>
-    <div class="flex space-x-2 items-center">
-      <div class="flex space-x-2">
+    <!-- ************************************************************************* -->
+    <div class="flex space-x-2 items-center justify-end">
+      <!-- <div class="flex space-x-2">
         <button class="">
           <fa-icon [icon]="faBell"></fa-icon>
         </button>
         <button class="">
           <fa-icon [icon]="faInfoCircle"></fa-icon>
         </button>
-      </div>
+      </div> -->
 
       <button
         type="button"
-        class="flex rounded-full border-gray-600 border-2 border-s-gray-400 cursor-pointer"
+        class="flex rounded-full border-gray-600 border-2 border-s-gray-400"
         aria-expanded="false"
         type="button"
         (click)="isOpen = !isOpen"
@@ -50,8 +46,8 @@
           alt="user photo"
         />
       </button>
-      <small>perfil</small>
     </div>
+    <!-- ************************************************************************* -->
   </div>
 </nav>
 
@@ -88,7 +84,7 @@
         >
       </li>
     </ul>
-    <div class="cursor-pointer flex justify-center p-2 bg-orange-500">
+    <div class="flex justify-center p-2 bg-orange-500">
       <button (click)="logOut()">Salir</button>
     </div>
   </div>
