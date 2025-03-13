@@ -48,7 +48,7 @@ export class LogoutComponent {
     try {
       if (this.form.valid) {
         console.log(this.form.value);
-        await this._authService.singUp(this.form.value);
+        await this._authService.signUp(this.form.value);
         toast.success('Usuario creado correctamente');
         this._router.navigateByUrl('/board');
       } else {
@@ -65,7 +65,7 @@ export class LogoutComponent {
     try {
       await this._authService.signInWithGoogle();
       toast.success('Bienvenido');
-      this._router.navigateByUrl('/board');
+      this._router.navigateByUrl('dashboard/board');
     } catch (error) {
       toast.error('Error al iniciar sesión con Google');
       console.error(error);

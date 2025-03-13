@@ -57,9 +57,14 @@
           <small class="text-red-600">este campo es requerido</small>
           } -->
           <div>
-            <app-btn [typeBtn]="'submit'" [color]="'success'">Entrar</app-btn>
-            <a href="/logup" class="text-blue-600 hover:text-blue-700"
-              >Forgot Password?</a
+            <app-btn [typeBtn]="'submit'" [color]="'success'"
+              >Iniciar sesion</app-btn
+            >
+
+            <a
+              href="auth/logout"
+              class="text-blue-600 hover:text-blue-700 cursor-pointer"
+              >Crear una cuenta</a
             >
           </div>
         </form>

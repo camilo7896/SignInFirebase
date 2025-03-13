@@ -50,12 +50,13 @@ export class LoginComponent {
   }
 
   async submit() {
+    console.log('submit, clicado');
     try {
       if (this.form.valid) {
         console.log(this.form.value);
         await this._authService.signIn(this.form.value);
         toast.success('Hola nuevamente');
-        this._router.navigateByUrl('/board');
+        this._router.navigateByUrl('dashboard/board');
       } else {
         this.form.markAllAsTouched();
         console.error('Formulario inválido');
@@ -76,7 +77,7 @@ export class LoginComponent {
     try {
       await this._authService.signInWithGoogle();
       toast.success('Bienvenido');
-      this._router.navigateByUrl('/board');
+      this._router.navigateByUrl('dashboard/board');
     } catch (error) {
       toast.error('Error al iniciar sesión con Google');
       console.error(error);

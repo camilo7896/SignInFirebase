@@ -86,18 +86,14 @@
       </li>
       <li>
         <a
-          href="#"
+          href="dashboard/board"
           class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600"
           >Earnings</a
         >
       </li>
-      <li>
-        <a
-          href="/login"
-          class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600"
-          >Sign out</a
-        >
-      </li>
     </ul>
+    <div class="flex justify-center p-2 bg-orange-500">
+      <button (click)="logOut()">Salir</button>
+    </div>
   </div>
 </ng-template>
